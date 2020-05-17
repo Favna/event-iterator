@@ -51,7 +51,7 @@
       "source-map-support/register"
     ]
   },
-  "dependencies": {
+  "peerDependencies": {
     "@klasa/timer-manager": "^0.0.1"
   }
 }
