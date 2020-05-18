@@ -883,22 +883,6 @@
 												"type": "typeParameter",
 												"name": "V"
 											}
-										},
-										{
-											"id": 42,
-											"name": "collected",
-											"kind": 32768,
-											"kindString": "Parameter",
-											"flags": {
-												"isExported": true
-											},
-											"type": {
-												"type": "array",
-												"elementType": {
-													"type": "typeParameter",
-													"name": "V"
-												}
-											}
 										}
 									],
 									"type": {
