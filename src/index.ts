@@ -37,7 +37,7 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 	#ended = false;
 
 	/**
-	 * The timeout for ending the EventIterator due to idling, if the option was passed.
+	 * The amount of idle time in ms before moving on.
 	 */
 	#idle?: number;
 
