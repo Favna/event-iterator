@@ -66,7 +66,7 @@ ava('EventIterator properly times out', async (test): Promise<void> => {
 ava('EventEmitter timer properly refreshes', async (test): Promise<void> => {
 	test.plan(3);
 
-	const iter = new PeopleEmitter().createPeopleIterator(4, {idle: 1200});
+	const iter = new PeopleEmitter().createPeopleIterator(4, { idle: 1200 });
 	let count = 0;
 
 	for await (const value of iter) {
