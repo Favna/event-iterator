@@ -94,10 +94,10 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 		if (this.#queue.length) return { done: false, value: this.#queue.shift() as V };
 		if (this.ended) return { done: true, value: undefined as never };
 		return new Promise<IteratorResult<V>>((resolve): void => {
-			let idleTimer: Nodejs.Timer;
+			let idleTimer: NodeJS.Timer;
 
 			if (this.#idle) {
-				const idleTimer = TimerManager.setTimeout(() => {
+				idleTimer = TimerManager.setTimeout(() => {
 					this.end();
 					resolve(this.next());
 				}, this.#idle);
