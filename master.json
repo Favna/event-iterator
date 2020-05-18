@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "@klasa/util",
+	"name": "@klasa/event-iterator",
 	"kind": 0,
 	"flags": {},
 	"originalName": "",
@@ -16,46 +16,832 @@
 			"originalName": "/home/runner/work/event-iterator/event-iterator/src/index.ts",
 			"children": [
 				{
-					"id": 2,
-					"name": "foo",
-					"kind": 64,
-					"kindString": "Function",
+					"id": 6,
+					"name": "EventIterator",
+					"kind": 128,
+					"kindString": "Class",
 					"flags": {
-						"isExported": true
+						"isExported": true,
+						"isAbstract": true
 					},
-					"signatures": [
+					"comment": {
+						"shortText": "An EventIterator, used for asynchronously iterating over received values."
+					},
+					"typeParameter": [
 						{
-							"id": 3,
-							"name": "foo",
-							"kind": 4096,
-							"kindString": "Call signature",
+							"id": 7,
+							"name": "V",
+							"kind": 131072,
+							"kindString": "Type parameter",
 							"flags": {
+								"isExported": true
+							}
+						}
+					],
+					"children": [
+						{
+							"id": 14,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {},
+							"signatures": [
+								{
+									"id": 17,
+									"name": "new EventIterator",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"parameters": [
+										{
+											"id": 18,
+											"name": "emitter",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"shortText": "The EventEmitter to listen to."
+											},
+											"type": {
+												"type": "reference",
+												"name": "EventEmitter"
+											}
+										},
+										{
+											"id": 19,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"shortText": "The event we're listening for to receives values from."
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 20,
+											"name": "limit",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"shortText": "The amount of values to receive before ending the iterator."
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 21,
+											"name": "options",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"shortText": "Any extra options.\n"
+											},
+											"type": {
+												"type": "reference",
+												"id": 2,
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "V"
+													}
+												],
+												"name": "EventIteratorOptions"
+											},
+											"defaultValue": "{}"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 6,
+										"name": "EventIterator"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 57,
+									"character": 16
+								}
+							]
+						},
+						{
+							"id": 12,
+							"name": "#collected",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
 								"isExported": true
 							},
 							"comment": {
-								"shortText": "The mythical function"
+								"shortText": "The amount of collected values."
 							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 52,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "0"
+						},
+						{
+							"id": 9,
+							"name": "#ended",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Whether or not the EventIterator has ended."
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 37,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							},
+							"defaultValue": "false"
+						},
+						{
+							"id": 10,
+							"name": "#idle",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The amount of idle time in ms before moving on."
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 42,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 13,
+							"name": "#limit",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The limit before ending the EventIterator."
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 57,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 11,
+							"name": "#queue",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The queue of received values."
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 47,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "typeParameter",
+									"name": "V"
+								}
+							},
+							"defaultValue": "[]"
+						},
+						{
+							"id": 15,
+							"name": "emitter",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true,
+								"isConstructorProperty": true,
+								"isReadonly": true
+							},
+							"comment": {
+								"shortText": "The EventEmitter to listen to."
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 65,
+									"character": 43
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EventEmitter"
+							}
+						},
+						{
+							"id": 16,
+							"name": "event",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true,
+								"isConstructorProperty": true
+							},
+							"comment": {
+								"shortText": "The event we're listening for to receives values from."
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 65,
+									"character": 71
+								}
+							],
 							"type": {
 								"type": "intrinsic",
 								"name": "string"
+							}
+						},
+						{
+							"id": 8,
+							"name": "filter",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The filter used to filter out values."
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 32,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 33,
+								"typeArguments": [
+									{
+										"type": "typeParameter",
+										"name": "V"
+									}
+								],
+								"name": "EventIteratorFilter"
+							}
+						},
+						{
+							"id": 22,
+							"name": "ended",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Whether or not the EventIterator has ended."
+							},
+							"getSignature": [
+								{
+									"id": 23,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Whether or not the EventIterator has ended."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 77,
+									"character": 17
+								}
+							]
+						},
+						{
+							"id": 28,
+							"name": "[Symbol.asyncIterator]",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 29,
+									"name": "[Symbol.asyncIterator]",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "The symbol allowing EventIterators to be used in for-await-of loops."
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "V"
+											}
+										],
+										"name": "AsyncIterableIterator"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 116,
+									"character": 30
+								}
+							]
+						},
+						{
+							"id": 24,
+							"name": "end",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 25,
+									"name": "end",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Ends the EventIterator."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 84,
+									"character": 11
+								}
+							]
+						},
+						{
+							"id": 26,
+							"name": "next",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 27,
+									"name": "next",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "The next value that's received from the EventEmitter."
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "V"
+													}
+												],
+												"name": "IteratorResult"
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 93,
+									"character": 18
+								}
+							]
+						},
+						{
+							"id": 30,
+							"name": "push",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isProtected": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 31,
+									"name": "push",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Pushes a value into the queue."
+									},
+									"parameters": [
+										{
+											"id": 32,
+											"name": "value",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "typeParameter",
+												"name": "V"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 123,
+									"character": 15
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								14
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								12,
+								9,
+								10,
+								13,
+								11,
+								15,
+								16,
+								8
+							]
+						},
+						{
+							"title": "Accessors",
+							"kind": 262144,
+							"children": [
+								22
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								28,
+								24,
+								26,
+								30
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 27,
+							"character": 35
+						}
+					],
+					"implementedTypes": [
+						{
+							"type": "reference",
+							"typeArguments": [
+								{
+									"type": "typeParameter",
+									"name": "V"
+								}
+							],
+							"name": "AsyncIterableIterator"
+						}
+					]
+				},
+				{
+					"id": 2,
+					"name": "EventIteratorOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Options to be passed to an EventIterator."
+					},
+					"typeParameter": [
+						{
+							"id": 3,
+							"name": "V",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {
+								"isExported": true
+							}
+						}
+					],
+					"children": [
+						{
+							"id": 4,
+							"name": "filter",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The filter."
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 17,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 33,
+								"typeArguments": [
+									{
+										"type": "typeParameter",
+										"name": "V"
+									}
+								],
+								"name": "EventIteratorFilter"
+							}
+						},
+						{
+							"id": 5,
+							"name": "idle",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The timeout in ms before ending the EventIterator."
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 21,
+									"character": 5
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								4,
+								5
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 13,
+							"character": 37
+						}
+					]
+				},
+				{
+					"id": 33,
+					"name": "EventIteratorFilter",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "A filter for an EventIterator."
+					},
+					"typeParameter": [
+						{
+							"id": 34,
+							"name": "V",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {
+								"isExported": true
 							}
 						}
 					],
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 4,
-							"character": 27
+							"line": 8,
+							"character": 31
 						}
-					]
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 35,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 36,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 37,
+											"name": "value",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "typeParameter",
+												"name": "V"
+											}
+										},
+										{
+											"id": 38,
+											"name": "collected",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "typeParameter",
+													"name": "V"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 8,
+									"character": 36
+								}
+							]
+						}
+					}
 				}
 			],
 			"groups": [
 				{
-					"title": "Functions",
-					"kind": 64,
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						6
+					]
+				},
+				{
+					"title": "Interfaces",
+					"kind": 256,
 					"children": [
 						2
+					]
+				},
+				{
+					"title": "Type aliases",
+					"kind": 4194304,
+					"children": [
+						33
 					]
 				}
 			],
