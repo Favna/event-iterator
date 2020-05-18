@@ -6,9 +6,9 @@ import { TimerManager } from '@klasa/timer-manager';
 export class PeopleIterator extends EventIterator<Person> { }
 
 export const people = [
+	new Person('Anna'),
 	new Person('Bob'),
-	new Person('Joe'),
-	new Person('Anna')
+	new Person('Joe')
 ];
 
 export class PeopleEmitter extends EventEmitter {
