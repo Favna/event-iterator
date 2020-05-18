@@ -55,10 +55,23 @@ ava('EventIterator properly filters values', async (test): Promise<void> => {
 	test.is(count, filteredPeople.length);
 });
 
-ava('Timing out works', async (test): Promise<void> => {
+ava('EventIterator properly times out', async (test): Promise<void> => {
 	const iter = new PeopleEmitter().createPeopleIterator(people.length, { idle: 500 });
 	for await (const __ of iter) {
 		test.fail();
 	}
 	test.true(iter.ended);
 });
+
+ava('EventEmitter timer properly refreshes', async (test): Promise<void> => {
+	test.plan(3);
+
+	const iter = new PeopleEmitter().createPeopleIterator(4, {idle: 1200});
+	let count = 0;
+
+	for await (const value of iter) {
+		test.is(value, people[count++]);
+	}
+
+	test.is(count, 3);
+})
