@@ -31,7 +31,9 @@ ava('EventIterator#next', async (test): Promise<void> => {
 
 ava('EventIterator ends when it hits it\'s limit', async (test): Promise<void> => {
 	test.plan(3);
+
 	const iter = new PeopleEmitter().createPeopleIterator(2);
+
 	let count = 0;
 	for await (const value of iter) {
 		test.is(value, people[count++]);
@@ -39,16 +41,18 @@ ava('EventIterator ends when it hits it\'s limit', async (test): Promise<void> =
 	test.is(count, 2);
 });
 
-// This test keeps failing and idk why.
 ava('EventIterator properly filters values', async (test): Promise<void> => {
+	test.plan(3);
+
 	const filter = (person: Person): boolean => person.name.length === 3;
 	const filteredPeople = people.filter(filter);
 	const iter = new PeopleEmitter().createPeopleIterator(filteredPeople.length, { filter });
+
 	let count = 0;
 	for await (const value of iter) {
 		test.is(value, filteredPeople[count++]);
-		if (count === filteredPeople.length - 1) break;
 	}
+	test.is(count, filteredPeople.length);
 });
 
 ava('Timing out works', async (test): Promise<void> => {
