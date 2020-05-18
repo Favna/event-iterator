@@ -1,12 +1,12 @@
 {
-  "name": "@klasa/util",
+  "name": "@klasa/event-iterator",
   "version": "0.0.1",
-  "description": "some util thing.",
+  "description": "Turns event emitter events into async iterators.",
   "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "yarn build",
     "build": "tsc",
-    "test": "ava",
+    "test": "ava --timeout=2m",
     "test:lint": "eslint --ext ts src test",
     "test:coverage": "npx nyc check-coverage --lines 90 --functions 90 --branches 90",
     "coverage": "npx nyc --require ts-node/register --require source-map-support/register npm test",
@@ -22,6 +22,8 @@
   },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
+    "@klasa/timer-manager": "^0.0.1",
+    "@klasa/utils": "^0.0.4",
     "@types/node": "^14.0.1",
     "@typescript-eslint/eslint-plugin": "2.33.0",
     "@typescript-eslint/parser": "2.33.0",
@@ -31,8 +33,8 @@
     "nyc": "^15.0.1",
     "source-map-support": "^0.5.19",
     "ts-node": "^8.10.1",
-    "typescript": "^3.9.2",
-    "typedoc": "^0.17.7"
+    "typedoc": "^0.17.7",
+    "typescript": "^3.9.2"
   },
   "repository": {
     "type": "git",
@@ -50,5 +52,8 @@
       "ts-node/register",
       "source-map-support/register"
     ]
+  },
+  "peerDependencies": {
+    "@klasa/timer-manager": "^0.0.1"
   }
 }
