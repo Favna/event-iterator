@@ -347,7 +347,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 33,
+								"id": 37,
 								"typeArguments": [
 									{
 										"type": "typeParameter",
@@ -396,7 +396,7 @@
 							]
 						},
 						{
-							"id": 28,
+							"id": 32,
 							"name": "[Symbol.asyncIterator]",
 							"kind": 2048,
 							"kindString": "Method",
@@ -406,7 +406,7 @@
 							},
 							"signatures": [
 								{
-									"id": 29,
+									"id": 33,
 									"name": "[Symbol.asyncIterator]",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -431,7 +431,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 120,
+									"line": 136,
 									"character": 30
 								}
 							]
@@ -519,7 +519,7 @@
 							]
 						},
 						{
-							"id": 30,
+							"id": 34,
 							"name": "push",
 							"kind": 2048,
 							"kindString": "Method",
@@ -529,7 +529,7 @@
 							},
 							"signatures": [
 								{
-									"id": 31,
+									"id": 35,
 									"name": "push",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -541,7 +541,7 @@
 									},
 									"parameters": [
 										{
-											"id": 32,
+											"id": 36,
 											"name": "value",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -563,8 +563,102 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 127,
+									"line": 143,
 									"character": 15
+								}
+							]
+						},
+						{
+							"id": 28,
+							"name": "return",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 29,
+									"name": "return",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Handles what happens when you break or return from a loop."
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "V"
+													}
+												],
+												"name": "IteratorResult"
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 120,
+									"character": 20
+								}
+							]
+						},
+						{
+							"id": 30,
+							"name": "throw",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 31,
+									"name": "throw",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Handles what happens when you encounter an error in a loop."
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "V"
+													}
+												],
+												"name": "IteratorResult"
+											}
+										],
+										"name": "Promise"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 128,
+									"character": 19
 								}
 							]
 						}
@@ -602,9 +696,11 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								28,
+								32,
 								24,
 								26,
+								34,
+								28,
 								30
 							]
 						}
@@ -673,7 +769,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 33,
+								"id": 37,
 								"typeArguments": [
 									{
 										"type": "typeParameter",
@@ -727,7 +823,7 @@
 					]
 				},
 				{
-					"id": 33,
+					"id": 37,
 					"name": "EventIteratorFilter",
 					"kind": 4194304,
 					"kindString": "Type alias",
@@ -739,7 +835,7 @@
 					},
 					"typeParameter": [
 						{
-							"id": 34,
+							"id": 38,
 							"name": "V",
 							"kind": 131072,
 							"kindString": "Type parameter",
@@ -758,7 +854,7 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 35,
+							"id": 39,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -767,7 +863,7 @@
 							},
 							"signatures": [
 								{
-									"id": 36,
+									"id": 40,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -776,7 +872,7 @@
 									},
 									"parameters": [
 										{
-											"id": 37,
+											"id": 41,
 											"name": "value",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -789,7 +885,7 @@
 											}
 										},
 										{
-											"id": 38,
+											"id": 42,
 											"name": "collected",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -841,7 +937,7 @@
 					"title": "Type aliases",
 					"kind": 4194304,
 					"children": [
-						33
+						37
 					]
 				}
 			],
