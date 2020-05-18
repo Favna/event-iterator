@@ -98,3 +98,48 @@ ava('EventIterator doesn\'t increase listener count when count is 0', (test): vo
 	iter.end();
 	test.is(emitter.getMaxListeners(), 0);
 });
+
+ava('EventIterator decreases count when loop is broken', async (test): Promise<void> => {
+	test.plan(2);
+
+	const emitter = new PeopleEmitter();
+	emitter.setMaxListeners(1);
+	const iter = emitter.createPeopleIterator();
+	test.is(emitter.getMaxListeners(), 2);
+	for await (const __ of iter) {
+		break;
+	}
+	test.is(emitter.getMaxListeners(), 1);
+});
+
+ava('EventIterator decreases count when loop is thrown from', async (test): Promise<void> => {
+	test.plan(2);
+
+	const emitter = new PeopleEmitter();
+	emitter.setMaxListeners(1);
+	const iter = emitter.createPeopleIterator();
+	test.is(emitter.getMaxListeners(), 2);
+
+	try {
+		for await (const __ of iter) {
+			throw new Error('Ahhhhhhhhh');
+		}
+	} catch {
+		// noop
+	}
+
+	test.is(emitter.getMaxListeners(), 1);
+});
+
+ava('EventIterator decreases count when some unknown internal throw happens', async (test): Promise<void> => {
+	test.plan(2);
+
+	const emitter = new PeopleEmitter();
+	emitter.setMaxListeners(1);
+	const iter = emitter.createPeopleIterator();
+	test.is(emitter.getMaxListeners(), 2);
+
+	await iter.throw();
+
+	test.is(emitter.getMaxListeners(), 1);
+});

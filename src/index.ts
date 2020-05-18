@@ -115,6 +115,22 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 	}
 
 	/**
+	 * Handles what happens when you break or return from a loop.
+	 */
+	public async return(): Promise<IteratorResult<V>> {
+		this.end();
+		return { done: true, value: undefined as never };
+	}
+
+	/**
+	 * Handles what happens when you encounter an error in a loop.
+	 */
+	public async throw(): Promise<IteratorResult<V>> {
+		this.end();
+		return { done: true, value: undefined as never };
+	}
+
+	/**
 	 * The symbol allowing EventIterators to be used in for-await-of loops.
 	 */
 	public [Symbol.asyncIterator](): AsyncIterableIterator<V> {
