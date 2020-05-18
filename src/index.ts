@@ -39,7 +39,7 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 	/**
 	 * The timeout for ending the EventIterator due to idling, if the option was passed.
 	 */
-	#idleTimer?: NodeJS.Timer;
+	#idle?: number;
 
 	/**
 	 * The queue of received values.
@@ -64,11 +64,11 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 	 */
 	public constructor(public readonly emitter: EventEmitter, public event: string, limit: number, options: EventIteratorOptions<V> = {}) {
 		this.#limit = limit;
+		this.#idle = options.idle;
 		this.filter = options.filter ?? ((): boolean => true);
 
 		this.push = this.push.bind(this);
 		this.emitter.on(this.event, this.push);
-		if (options.idle) this.#idleTimer = TimerManager.setTimeout(this.end.bind(this), options.idle);
 	}
 
 	/**
@@ -94,7 +94,17 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 		if (this.#queue.length) return { done: false, value: this.#queue.shift() as V };
 		if (this.ended) return { done: true, value: undefined as never };
 		return new Promise<IteratorResult<V>>((resolve): void => {
+			let idleTimer: Nodejs.Timer;
+
+			if (this.#idle) {
+				const idleTimer = TimerManager.setTimeout(() => {
+					this.end();
+					resolve(this.next());
+				}, this.#idle);
+			}
+
 			this.emitter.once(this.event, (): void => {
+				if (idleTimer) TimerManager.clearTimeout(idleTimer);
 				resolve(this.next());
 			});
 		});
@@ -112,10 +122,7 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 	 */
 	protected push(value: V): void {
 		if (this.filter(value, this.#queue.slice())) {
-			// eslint-disable-next-line no-unused-expressions
-			this.#idleTimer?.refresh();
 			this.#queue.push(value);
-
 			if (++this.#collected >= this.#limit) this.end();
 		}
 	}
