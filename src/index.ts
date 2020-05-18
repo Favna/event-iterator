@@ -116,10 +116,7 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 			this.#idleTimer?.refresh();
 			this.#queue.push(value);
 
-			if (++this.#collected >= this.#limit) {
-				this.end();
-				return;
-			}
+			if (++this.#collected >= this.#limit) this.end();
 		}
 	}
 
