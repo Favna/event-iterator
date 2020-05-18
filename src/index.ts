@@ -68,6 +68,8 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 		this.filter = options.filter ?? ((): boolean => true);
 
 		this.push = this.push.bind(this);
+		const maxListeners = this.emitter.getMaxListeners();
+		if (maxListeners !== 0) this.emitter.setMaxListeners(maxListeners + 1);
 		this.emitter.on(this.event, this.push);
 	}
 
@@ -85,6 +87,8 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 		if (this.#ended) return;
 		this.#ended = true;
 		this.emitter.off(this.event, this.push);
+		const maxListeners = this.emitter.getMaxListeners();
+		if (maxListeners !== 0) this.emitter.setMaxListeners(maxListeners - 1);
 	}
 
 	/**

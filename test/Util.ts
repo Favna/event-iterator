@@ -57,13 +57,14 @@ ava('EventIterator properly filters values', async (test): Promise<void> => {
 
 ava('EventIterator properly times out', async (test): Promise<void> => {
 	const iter = new PeopleEmitter().createPeopleIterator(people.length, { idle: 500 });
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	for await (const __ of iter) {
 		test.fail();
 	}
 	test.true(iter.ended);
 });
 
-ava('EventEmitter timer properly idles out with iterations', async (test): Promise<void> => {
+ava('EventIterator timer properly idles out with iterations', async (test): Promise<void> => {
 	test.plan(4);
 
 	const iter = new PeopleEmitter().createPeopleIterator(4, { idle: 1200 });
@@ -74,4 +75,26 @@ ava('EventEmitter timer properly idles out with iterations', async (test): Promi
 	}
 
 	test.is(count, 3);
+});
+
+ava('EventIterator properly increases listeners', (test): void => {
+	test.plan(2);
+
+	const emitter = new PeopleEmitter();
+	emitter.setMaxListeners(1);
+	const iter = emitter.createPeopleIterator();
+	test.is(emitter.getMaxListeners(), 2);
+	iter.end();
+	test.is(emitter.getMaxListeners(), 1);
+});
+
+ava('EventIterator doesn\'t increase listener count when count is 0', (test): void => {
+	test.plan(2);
+
+	const emitter = new PeopleEmitter();
+	emitter.setMaxListeners(0);
+	const iter = emitter.createPeopleIterator();
+	test.is(emitter.getMaxListeners(), 0);
+	iter.end();
+	test.is(emitter.getMaxListeners(), 0);
 });
