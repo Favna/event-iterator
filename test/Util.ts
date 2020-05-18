@@ -1,6 +1,7 @@
 import ava from 'ava';
 import { PeopleEmitter, people } from './lib/MockEmitter';
 import { EventIterator } from '../dist';
+import type { Person } from './lib/Person';
 
 ava('PeopleIterator is an instanceof EventIterator', (test): void => {
 	test.true(new PeopleEmitter().createPeopleIterator() instanceof EventIterator);
@@ -39,10 +40,12 @@ ava('EventIterator ends when it hits it\'s limit', async (test): Promise<void> =
 
 // This test keeps failing and idk why.
 ava('EventIterator properly filters values', async (test): Promise<void> => {
-	const iter = new PeopleEmitter().createPeopleIterator(2, { filter: (person): boolean => person.name.length === 3 });
-	let count = 1;
+	const filter = (person: Person): boolean => person.name.length === 3;
+	const filteredPeople = people.filter(filter);
+	const iter = new PeopleEmitter().createPeopleIterator(filteredPeople.length, { filter });
+	let count = 0;
 	for await (const value of iter) {
-		test.is(value, people[count++]);
+		test.is(value, filteredPeople[count++]);
 	}
 });
 
