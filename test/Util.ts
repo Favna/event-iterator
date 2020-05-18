@@ -74,4 +74,4 @@ ava('EventEmitter timer properly refreshes', async (test): Promise<void> => {
 	}
 
 	test.is(count, 3);
-})
+});
