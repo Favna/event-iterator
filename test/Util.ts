@@ -46,6 +46,7 @@ ava('EventIterator properly filters values', async (test): Promise<void> => {
 	let count = 0;
 	for await (const value of iter) {
 		test.is(value, filteredPeople[count++]);
+		if (count === filteredPeople.length - 1) break;
 	}
 });
 
