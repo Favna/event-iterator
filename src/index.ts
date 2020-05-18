@@ -112,13 +112,14 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 	 */
 	protected push(value: V): void {
 		if (this.filter(value, this.#queue.slice())) {
-			if (++this.#collected >= this.#limit) {
+			if (this.#collected >= this.#limit) {
 				this.end();
 				return;
 			}
 			// eslint-disable-next-line no-unused-expressions
 			this.#idleTimer?.refresh();
 			this.#queue.push(value);
+			this.#collected++;
 		}
 	}
 
