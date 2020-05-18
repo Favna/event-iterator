@@ -5,7 +5,7 @@ import type { EventEmitter } from 'events';
 /**
  * A filter for an EventIterator.
  */
-export type EventIteratorFilter<V> = (value: V, collected: V[]) => boolean;
+export type EventIteratorFilter<V> = (value: V) => boolean;
 
 /**
  * Options to be passed to an EventIterator.
@@ -141,7 +141,7 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 	 * Pushes a value into the queue.
 	 */
 	protected push(value: V): void {
-		if (this.filter(value, this.#queue.slice())) {
+		if (this.filter(value)) {
 			this.#queue.push(value);
 			if (++this.#collected >= this.#limit) this.end();
 		}
