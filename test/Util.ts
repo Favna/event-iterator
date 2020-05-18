@@ -30,12 +30,13 @@ ava('EventIterator#next', async (test): Promise<void> => {
 });
 
 ava('EventIterator ends when it hits it\'s limit', async (test): Promise<void> => {
-	test.plan(2);
+	test.plan(3);
 	const iter = new PeopleEmitter().createPeopleIterator(2);
 	let count = 0;
 	for await (const value of iter) {
 		test.is(value, people[count++]);
 	}
+	test.is(count, 2);
 });
 
 // This test keeps failing and idk why.
