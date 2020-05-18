@@ -47,9 +47,9 @@ ava('EventIterator properly filters values', async (test): Promise<void> => {
 });
 
 ava('Timing out works', async (test): Promise<void> => {
-	const iter = new PeopleEmitter().createPeopleIterator(people.length, {idle: 500});
-	for await (const _ of iter) {
+	const iter = new PeopleEmitter().createPeopleIterator(people.length, { idle: 500 });
+	for await (const __ of iter) {
 		test.fail();
 	}
 	test.true(iter.ended);
-})
+});
