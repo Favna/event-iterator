@@ -21,8 +21,7 @@
 					"kind": 128,
 					"kindString": "Class",
 					"flags": {
-						"isExported": true,
-						"isAbstract": true
+						"isExported": true
 					},
 					"comment": {
 						"shortText": "An EventIterator, used for asynchronously iterating over received values."
@@ -709,7 +708,7 @@
 						{
 							"fileName": "index.ts",
 							"line": 27,
-							"character": 35
+							"character": 26
 						}
 					],
 					"implementedTypes": [
