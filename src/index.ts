@@ -19,6 +19,10 @@ export interface EventIteratorOptions<V> {
 	 * The timeout in ms before ending the EventIterator.
 	 */
 	idle?: number;
+	/**
+	 * The limit of events that pass the filter to iterate.
+	 */
+	limit?: number;
 }
 
 /**
@@ -47,9 +51,9 @@ export class EventIterator<V> implements AsyncIterableIterator<V> {
 	#queue: V[] = [];
 
 	/**
-	 * The amount of collected values.
+	 * The amount of events that have passed the filter.
 	 */
-	#collected = 0;
+	#passed = 0;
 
 	/**
 	 * The limit before ending the EventIterator.
@@ -62,8 +66,8 @@ export class EventIterator<V> implements AsyncIterableIterator<V> {
 	 * @param limit The amount of values to receive before ending the iterator.
 	 * @param options Any extra options.
 	 */
-	public constructor(public readonly emitter: EventEmitter, public event: string, limit: number, options: EventIteratorOptions<V> = {}) {
-		this.#limit = limit;
+	public constructor(public readonly emitter: EventEmitter, public event: string, options: EventIteratorOptions<V> = {}) {
+		this.#limit = options.limit ?? Infinity;
 		this.#idle = options.idle;
 		this.filter = options.filter ?? ((): boolean => true);
 
@@ -99,7 +103,7 @@ export class EventIterator<V> implements AsyncIterableIterator<V> {
 		if (this.#queue.length) {
 			const value = this.#queue.shift();
 			if (!this.filter(value)) return this.next();
-			if (++this.#collected >= this.#limit) this.end();
+			if (++this.#passed >= this.#limit) this.end();
 			return { done: false, value };
 		}
 		if (this.#ended) return { done: true, value: undefined as never };

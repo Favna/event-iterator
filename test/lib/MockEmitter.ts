@@ -37,8 +37,8 @@ export class PeopleEmitter extends EventEmitter {
 		}, 1000);
 	}
 
-	public createPeopleIterator(limit: number = this.#people.length, options?: EventIteratorOptions<Person>): PeopleIterator {
-		this.#iterator = new PeopleIterator(this, 'testEvent', limit, options);
+	public createPeopleIterator(options?: EventIteratorOptions<Person>): PeopleIterator {
+		this.#iterator = new PeopleIterator(this, 'testEvent', options);
 		this.init();
 		return this.#iterator;
 	}

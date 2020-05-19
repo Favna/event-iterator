@@ -19,7 +19,7 @@ ava('EventIterator#ended', (test): void => {
 
 ava('EventIterator#next', async (test): Promise<void> => {
 	test.plan(3);
-	const iter = new PeopleEmitter().createPeopleIterator();
+	const iter = new PeopleEmitter().createPeopleIterator({ limit: people.length });
 	const firstValue = await iter.next();
 	test.deepEqual(firstValue, { done: false, value: people[0] });
 	const secondValue = await iter.next();
@@ -32,7 +32,7 @@ ava('EventIterator#next', async (test): Promise<void> => {
 ava('EventIterator ends when it hits it\'s limit', async (test): Promise<void> => {
 	test.plan(3);
 
-	const iter = new PeopleEmitter().createPeopleIterator(2);
+	const iter = new PeopleEmitter().createPeopleIterator({ limit: 2 });
 
 	let count = 0;
 	for await (const value of iter) {
@@ -46,7 +46,7 @@ ava('EventIterator properly filters values', async (test): Promise<void> => {
 
 	const filter = (person: Person): boolean => person.name.length === 3;
 	const filteredPeople = people.filter(filter);
-	const iter = new PeopleEmitter().createPeopleIterator(filteredPeople.length, { filter });
+	const iter = new PeopleEmitter().createPeopleIterator({ limit: filteredPeople.length, filter });
 
 	let count = 0;
 	for await (const value of iter) {
@@ -56,7 +56,7 @@ ava('EventIterator properly filters values', async (test): Promise<void> => {
 });
 
 ava('EventIterator properly times out', async (test): Promise<void> => {
-	const iter = new PeopleEmitter().createPeopleIterator(people.length, { idle: 500 });
+	const iter = new PeopleEmitter().createPeopleIterator({ idle: 500 });
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	for await (const __ of iter) {
 		test.fail();
@@ -67,7 +67,7 @@ ava('EventIterator properly times out', async (test): Promise<void> => {
 ava('EventIterator timer properly idles out with iterations', async (test): Promise<void> => {
 	test.plan(4);
 
-	const iter = new PeopleEmitter().createPeopleIterator(4, { idle: 1200 });
+	const iter = new PeopleEmitter().createPeopleIterator({ idle: 1200 });
 	let count = 0;
 
 	for await (const value of iter) {
