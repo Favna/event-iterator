@@ -24,7 +24,7 @@ export interface EventIteratorOptions<V> {
 /**
  * An EventIterator, used for asynchronously iterating over received values.
  */
-export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
+export class EventIterator<V> implements AsyncIterableIterator<V> {
 
 	/**
 	 * The filter used to filter out values.
