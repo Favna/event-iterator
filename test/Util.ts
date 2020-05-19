@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { PeopleEmitter, people } from './lib/MockEmitter';
+import { PeopleEmitter, people, sleep } from './lib/MockEmitter';
 import { EventIterator } from '../dist';
 import type { Person } from './lib/Person';
 
@@ -142,4 +142,28 @@ ava('EventIterator decreases count when some unknown internal throw happens', as
 	await iter.throw();
 
 	test.is(emitter.getMaxListeners(), 1);
+});
+
+ava('EventIterator doesn\'t have a next value after throwing', async (test): Promise<void> => {
+	test.plan(4);
+	const iter = new PeopleEmitter().createPeopleIterator();
+	test.false(iter.ended);
+	await sleep(3000);
+	await iter.throw();
+	test.true(iter.ended);
+	const next = await iter.next();
+	test.is(next.value, undefined);
+	test.is(next.done, true);
+});
+
+ava('EventIterator doesn\'t have a next value after breaking', async (test): Promise<void> => {
+	test.plan(4);
+	const iter = new PeopleEmitter().createPeopleIterator();
+	test.false(iter.ended);
+	await sleep(3000);
+	for await (const __ of iter) break;
+	test.true(iter.ended);
+	const next = await iter.next();
+	test.is(next.value, undefined);
+	test.is(next.done, true);
 });

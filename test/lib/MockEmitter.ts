@@ -2,6 +2,7 @@ import { EventEmitter } from 'events';
 import { EventIterator, EventIteratorOptions } from '../../dist';
 import { Person } from './Person';
 import { TimerManager } from '@klasa/timer-manager';
+import { promisify } from 'util';
 
 export class PeopleIterator extends EventIterator<Person> { }
 
@@ -43,3 +44,5 @@ export class PeopleEmitter extends EventEmitter {
 	}
 
 }
+
+export const sleep = promisify(setTimeout);

@@ -119,6 +119,7 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 	 */
 	public async return(): Promise<IteratorResult<V>> {
 		this.end();
+		this.#queue = [];
 		return { done: true, value: undefined as never };
 	}
 
@@ -127,6 +128,7 @@ export abstract class EventIterator<V> implements AsyncIterableIterator<V> {
 	 */
 	public async throw(): Promise<IteratorResult<V>> {
 		this.end();
+		this.#queue = [];
 		return { done: true, value: undefined as never };
 	}
 
