@@ -86,6 +86,7 @@ export class EventIterator<V> implements AsyncIterableIterator<V> {
 	public end(): void {
 		if (this.#ended) return;
 		this.#ended = true;
+		this.#queue = [];
 		this.emitter.off(this.event, this.push);
 		const maxListeners = this.emitter.getMaxListeners();
 		if (maxListeners !== 0) this.emitter.setMaxListeners(maxListeners - 1);
@@ -95,7 +96,12 @@ export class EventIterator<V> implements AsyncIterableIterator<V> {
 	 * The next value that's received from the EventEmitter.
 	 */
 	public async next(): Promise<IteratorResult<V>> {
-		if (this.#queue.length) return { done: false, value: this.#queue.shift() as V };
+		if (this.#queue.length) {
+			const value = this.#queue.shift();
+			if (!this.filter(value)) return this.next();
+			if (++this.#collected >= this.#limit) this.end();
+			return { done: false, value };
+		}
 		if (this.#ended) return { done: true, value: undefined as never };
 		return new Promise<IteratorResult<V>>((resolve): void => {
 			let idleTimer: NodeJS.Timer;
@@ -119,7 +125,6 @@ export class EventIterator<V> implements AsyncIterableIterator<V> {
 	 */
 	public async return(): Promise<IteratorResult<V>> {
 		this.end();
-		this.#queue = [];
 		return { done: true, value: undefined as never };
 	}
 
@@ -128,7 +133,6 @@ export class EventIterator<V> implements AsyncIterableIterator<V> {
 	 */
 	public async throw(): Promise<IteratorResult<V>> {
 		this.end();
-		this.#queue = [];
 		return { done: true, value: undefined as never };
 	}
 
@@ -143,10 +147,7 @@ export class EventIterator<V> implements AsyncIterableIterator<V> {
 	 * Pushes a value into the queue.
 	 */
 	protected push(value: V): void {
-		if (this.filter(value)) {
-			this.#queue.push(value);
-			if (++this.#collected >= this.#limit) this.end();
-		}
+		this.#queue.push(value);
 	}
 
 }
