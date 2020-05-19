@@ -16,7 +16,7 @@
 			"originalName": "/home/runner/work/event-iterator/event-iterator/src/index.ts",
 			"children": [
 				{
-					"id": 6,
+					"id": 7,
 					"name": "EventIterator",
 					"kind": 128,
 					"kindString": "Class",
@@ -28,7 +28,7 @@
 					},
 					"typeParameter": [
 						{
-							"id": 7,
+							"id": 8,
 							"name": "V",
 							"kind": 131072,
 							"kindString": "Type parameter",
@@ -39,7 +39,7 @@
 					],
 					"children": [
 						{
-							"id": 14,
+							"id": 15,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -50,7 +50,7 @@
 							"comment": {},
 							"signatures": [
 								{
-									"id": 17,
+									"id": 18,
 									"name": "new EventIterator",
 									"kind": 16384,
 									"kindString": "Constructor signature",
@@ -60,7 +60,7 @@
 									"comment": {},
 									"parameters": [
 										{
-											"id": 18,
+											"id": 19,
 											"name": "emitter",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -76,7 +76,7 @@
 											}
 										},
 										{
-											"id": 19,
+											"id": 20,
 											"name": "event",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -89,22 +89,6 @@
 											"type": {
 												"type": "intrinsic",
 												"name": "string"
-											}
-										},
-										{
-											"id": 20,
-											"name": "limit",
-											"kind": 32768,
-											"kindString": "Parameter",
-											"flags": {
-												"isExported": true
-											},
-											"comment": {
-												"shortText": "The amount of values to receive before ending the iterator."
-											},
-											"type": {
-												"type": "intrinsic",
-												"name": "number"
 											}
 										},
 										{
@@ -134,7 +118,7 @@
 									],
 									"type": {
 										"type": "reference",
-										"id": 6,
+										"id": 7,
 										"name": "EventIterator"
 									}
 								}
@@ -142,38 +126,13 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 57,
+									"line": 61,
 									"character": 16
 								}
 							]
 						},
 						{
-							"id": 12,
-							"name": "#collected",
-							"kind": 1024,
-							"kindString": "Property",
-							"flags": {
-								"isPrivate": true,
-								"isExported": true
-							},
-							"comment": {
-								"shortText": "The amount of collected values."
-							},
-							"sources": [
-								{
-									"fileName": "index.ts",
-									"line": 52,
-									"character": 11
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "number"
-							},
-							"defaultValue": "0"
-						},
-						{
-							"id": 9,
+							"id": 10,
 							"name": "#ended",
 							"kind": 1024,
 							"kindString": "Property",
@@ -187,7 +146,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 37,
+									"line": 41,
 									"character": 7
 								}
 							],
@@ -198,7 +157,7 @@
 							"defaultValue": "false"
 						},
 						{
-							"id": 10,
+							"id": 11,
 							"name": "#idle",
 							"kind": 1024,
 							"kindString": "Property",
@@ -213,7 +172,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 42,
+									"line": 46,
 									"character": 6
 								}
 							],
@@ -223,7 +182,7 @@
 							}
 						},
 						{
-							"id": 13,
+							"id": 14,
 							"name": "#limit",
 							"kind": 1024,
 							"kindString": "Property",
@@ -237,7 +196,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 57,
+									"line": 61,
 									"character": 7
 								}
 							],
@@ -247,7 +206,32 @@
 							}
 						},
 						{
-							"id": 11,
+							"id": 13,
+							"name": "#passed",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The amount of events that have passed the filter."
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 56,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "0"
+						},
+						{
+							"id": 12,
 							"name": "#queue",
 							"kind": 1024,
 							"kindString": "Property",
@@ -261,7 +245,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 47,
+									"line": 51,
 									"character": 7
 								}
 							],
@@ -275,7 +259,7 @@
 							"defaultValue": "[]"
 						},
 						{
-							"id": 15,
+							"id": 16,
 							"name": "emitter",
 							"kind": 1024,
 							"kindString": "Property",
@@ -291,7 +275,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 65,
+									"line": 69,
 									"character": 43
 								}
 							],
@@ -301,7 +285,7 @@
 							}
 						},
 						{
-							"id": 16,
+							"id": 17,
 							"name": "event",
 							"kind": 1024,
 							"kindString": "Property",
@@ -316,7 +300,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 65,
+									"line": 69,
 									"character": 71
 								}
 							],
@@ -326,7 +310,7 @@
 							}
 						},
 						{
-							"id": 8,
+							"id": 9,
 							"name": "filter",
 							"kind": 1024,
 							"kindString": "Property",
@@ -340,7 +324,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 32,
+									"line": 36,
 									"character": 14
 								}
 							],
@@ -389,7 +373,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 79,
+									"line": 83,
 									"character": 17
 								}
 							]
@@ -430,7 +414,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 142,
+									"line": 146,
 									"character": 30
 								}
 							]
@@ -465,7 +449,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 86,
+									"line": 90,
 									"character": 11
 								}
 							]
@@ -512,7 +496,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 98,
+									"line": 102,
 									"character": 18
 								}
 							]
@@ -562,7 +546,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 149,
+									"line": 153,
 									"character": 15
 								}
 							]
@@ -609,7 +593,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 126,
+									"line": 130,
 									"character": 20
 								}
 							]
@@ -656,7 +640,7 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 134,
+									"line": 138,
 									"character": 19
 								}
 							]
@@ -667,21 +651,21 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								14
+								15
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								12,
-								9,
 								10,
-								13,
 								11,
-								15,
+								14,
+								13,
+								12,
 								16,
-								8
+								17,
+								9
 							]
 						},
 						{
@@ -707,7 +691,7 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 27,
+							"line": 31,
 							"character": 26
 						}
 					],
@@ -801,6 +785,30 @@
 								"type": "intrinsic",
 								"name": "number"
 							}
+						},
+						{
+							"id": 6,
+							"name": "limit",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The limit of events that pass the filter to iterate."
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 25,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
 						}
 					],
 					"groups": [
@@ -809,7 +817,8 @@
 							"kind": 1024,
 							"children": [
 								4,
-								5
+								5,
+								6
 							]
 						}
 					],
@@ -906,7 +915,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						6
+						7
 					]
 				},
 				{
