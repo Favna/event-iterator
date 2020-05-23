@@ -1,6 +1,6 @@
 import ava from 'ava';
 import { PeopleEmitter, people, sleep } from './lib/MockEmitter';
-import { EventIterator } from '../dist';
+import { EventIterator } from '../src';
 import type { Person } from './lib/Person';
 
 ava('PeopleIterator is an instanceof EventIterator', (test): void => {
