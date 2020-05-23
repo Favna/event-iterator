@@ -7,7 +7,7 @@
 	"children": [
 		{
 			"id": 1,
-			"name": "\"index\"",
+			"name": "\"src/index\"",
 			"kind": 1,
 			"kindString": "Module",
 			"flags": {
@@ -125,7 +125,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 61,
 									"character": 16
 								}
@@ -145,7 +145,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 41,
 									"character": 7
 								}
@@ -171,7 +171,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 46,
 									"character": 6
 								}
@@ -195,7 +195,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 61,
 									"character": 7
 								}
@@ -219,7 +219,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 56,
 									"character": 8
 								}
@@ -244,7 +244,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 51,
 									"character": 7
 								}
@@ -274,7 +274,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 69,
 									"character": 43
 								}
@@ -299,7 +299,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 69,
 									"character": 71
 								}
@@ -323,7 +323,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 36,
 									"character": 14
 								}
@@ -372,7 +372,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 83,
 									"character": 17
 								}
@@ -413,7 +413,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 146,
 									"character": 30
 								}
@@ -448,7 +448,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 90,
 									"character": 11
 								}
@@ -495,7 +495,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 102,
 									"character": 18
 								}
@@ -545,7 +545,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 153,
 									"character": 15
 								}
@@ -592,7 +592,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 130,
 									"character": 20
 								}
@@ -639,7 +639,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 138,
 									"character": 19
 								}
@@ -690,9 +690,16 @@
 					],
 					"sources": [
 						{
-							"fileName": "index.ts",
+							"fileName": "src/index.ts",
 							"line": 31,
 							"character": 26
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"id": 49,
+							"name": "PeopleIterator"
 						}
 					],
 					"implementedTypes": [
@@ -745,7 +752,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 17,
 									"character": 7
 								}
@@ -776,7 +783,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 21,
 									"character": 5
 								}
@@ -800,7 +807,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 25,
 									"character": 6
 								}
@@ -824,7 +831,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "index.ts",
+							"fileName": "src/index.ts",
 							"line": 13,
 							"character": 37
 						}
@@ -854,7 +861,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "index.ts",
+							"fileName": "src/index.ts",
 							"line": 8,
 							"character": 31
 						}
@@ -901,7 +908,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 8,
 									"character": 36
 								}
@@ -935,7 +942,2930 @@
 			],
 			"sources": [
 				{
-					"fileName": "index.ts",
+					"fileName": "src/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 171,
+			"name": "\"test/Util\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/event-iterator/event-iterator/test/Util.ts",
+			"sources": [
+				{
+					"fileName": "test/Util.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 48,
+			"name": "\"test/lib/MockEmitter\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/event-iterator/event-iterator/test/lib/MockEmitter.ts",
+			"children": [
+				{
+					"id": 78,
+					"name": "PeopleEmitter",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 160,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 161,
+									"name": "new PeopleEmitter",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 162,
+											"name": "options",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "EventEmitterOptions"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 78,
+										"name": "PeopleEmitter"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 160,
+										"name": "EventEmitter.__constructor"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/events.d.ts",
+									"line": 41,
+									"character": 28
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 160,
+								"name": "EventEmitter.__constructor"
+							}
+						},
+						{
+							"id": 80,
+							"name": "#emitted",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "test/lib/MockEmitter.ts",
+									"line": 19,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "0"
+						},
+						{
+							"id": 82,
+							"name": "#iterator",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "test/lib/MockEmitter.ts",
+									"line": 23,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"id": 49,
+										"name": "PeopleIterator"
+									},
+									{
+										"type": "intrinsic",
+										"name": "null"
+									}
+								]
+							},
+							"defaultValue": "null"
+						},
+						{
+							"id": 79,
+							"name": "#people",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "test/lib/MockEmitter.ts",
+									"line": 17,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 43,
+									"name": "Person"
+								}
+							},
+							"defaultValue": "people"
+						},
+						{
+							"id": 81,
+							"name": "#timeout",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "test/lib/MockEmitter.ts",
+									"line": 21,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"name": "Timeout"
+									},
+									{
+										"type": "intrinsic",
+										"name": "null"
+									}
+								]
+							},
+							"defaultValue": "null"
+						},
+						{
+							"id": 167,
+							"name": "defaultMaxListeners",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isStatic": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/events.d.ts",
+									"line": 45,
+									"character": 38
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 167,
+								"name": "EventEmitter.defaultMaxListeners"
+							}
+						},
+						{
+							"id": 168,
+							"name": "errorMonitor",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isStatic": true,
+								"isExported": true,
+								"isReadonly": true
+							},
+							"comment": {
+								"shortText": "This symbol shall be used to install a listener for only monitoring `'error'`\nevents. Listeners installed using this symbol are called before the regular\n`'error'` listeners are called.",
+								"text": "Installing a listener using this symbol does not change the behavior once an\n`'error'` event is emitted, therefore the process will still crash if no\nregular `'error'` listener is installed.\n"
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/events.d.ts",
+									"line": 55,
+									"character": 40
+								}
+							],
+							"type": {
+								"type": "typeOperator",
+								"operator": "keyof",
+								"target": {
+									"type": "intrinsic",
+									"name": "symbol"
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 168,
+								"name": "EventEmitter.errorMonitor"
+							}
+						},
+						{
+							"id": 88,
+							"name": "addListener",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 89,
+									"name": "addListener",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 90,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										},
+										{
+											"id": 91,
+											"name": "listener",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 92,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 93,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 94,
+																	"name": "args",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isRest": true
+																	},
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "intrinsic",
+																			"name": "any"
+																		}
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "node_modules/@types/node/globals.d.ts",
+															"line": 553,
+															"character": 53
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 88,
+										"name": "EventEmitter.addListener"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 553,
+									"character": 19
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 88,
+								"name": "EventEmitter.addListener"
+							}
+						},
+						{
+							"id": 85,
+							"name": "createPeopleIterator",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 86,
+									"name": "createPeopleIterator",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 87,
+											"name": "options",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"id": 2,
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 43,
+														"name": "Person"
+													}
+												],
+												"name": "EventIteratorOptions"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 49,
+										"name": "PeopleIterator"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "test/lib/MockEmitter.ts",
+									"line": 40,
+									"character": 28
+								}
+							]
+						},
+						{
+							"id": 137,
+							"name": "emit",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 138,
+									"name": "emit",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 139,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										},
+										{
+											"id": 140,
+											"name": "args",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isRest": true
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 137,
+										"name": "EventEmitter.emit"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 563,
+									"character": 12
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 137,
+								"name": "EventEmitter.emit"
+							}
+						},
+						{
+							"id": 158,
+							"name": "eventNames",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 159,
+									"name": "eventNames",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										],
+										"name": "Array"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 158,
+										"name": "EventEmitter.eventNames"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 568,
+									"character": 18
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 158,
+								"name": "EventEmitter.eventNames"
+							}
+						},
+						{
+							"id": 129,
+							"name": "getMaxListeners",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 130,
+									"name": "getMaxListeners",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 129,
+										"name": "EventEmitter.getMaxListeners"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 560,
+									"character": 23
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 129,
+								"name": "EventEmitter.getMaxListeners"
+							}
+						},
+						{
+							"id": 83,
+							"name": "init",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 84,
+									"name": "init",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "test/lib/MockEmitter.ts",
+									"line": 25,
+									"character": 12
+								}
+							]
+						},
+						{
+							"id": 141,
+							"name": "listenerCount",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 142,
+									"name": "listenerCount",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 143,
+											"name": "type",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 141,
+										"name": "EventEmitter.listenerCount"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 564,
+									"character": 21
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 141,
+								"name": "EventEmitter.listenerCount"
+							}
+						},
+						{
+							"id": 131,
+							"name": "listeners",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 132,
+									"name": "listeners",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 133,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"name": "Function"
+										}
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 131,
+										"name": "EventEmitter.listeners"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 561,
+									"character": 17
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 131,
+								"name": "EventEmitter.listeners"
+							}
+						},
+						{
+							"id": 116,
+							"name": "off",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 117,
+									"name": "off",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 118,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										},
+										{
+											"id": 119,
+											"name": "listener",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 120,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 121,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 122,
+																	"name": "args",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isRest": true
+																	},
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "intrinsic",
+																			"name": "any"
+																		}
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "node_modules/@types/node/globals.d.ts",
+															"line": 557,
+															"character": 45
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 116,
+										"name": "EventEmitter.off"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 557,
+									"character": 11
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 116,
+								"name": "EventEmitter.off"
+							}
+						},
+						{
+							"id": 95,
+							"name": "on",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 96,
+									"name": "on",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 97,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										},
+										{
+											"id": 98,
+											"name": "listener",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 99,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 100,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 101,
+																	"name": "args",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isRest": true
+																	},
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "intrinsic",
+																			"name": "any"
+																		}
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "node_modules/@types/node/globals.d.ts",
+															"line": 554,
+															"character": 44
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 95,
+										"name": "EventEmitter.on"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 554,
+									"character": 10
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 95,
+								"name": "EventEmitter.on"
+							}
+						},
+						{
+							"id": 102,
+							"name": "once",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 103,
+									"name": "once",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 104,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										},
+										{
+											"id": 105,
+											"name": "listener",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 106,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 107,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 108,
+																	"name": "args",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isRest": true
+																	},
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "intrinsic",
+																			"name": "any"
+																		}
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "node_modules/@types/node/globals.d.ts",
+															"line": 555,
+															"character": 46
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 102,
+										"name": "EventEmitter.once"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 555,
+									"character": 12
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 102,
+								"name": "EventEmitter.once"
+							}
+						},
+						{
+							"id": 144,
+							"name": "prependListener",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 145,
+									"name": "prependListener",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 146,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										},
+										{
+											"id": 147,
+											"name": "listener",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 148,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 149,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 150,
+																	"name": "args",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isRest": true
+																	},
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "intrinsic",
+																			"name": "any"
+																		}
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "node_modules/@types/node/globals.d.ts",
+															"line": 566,
+															"character": 57
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 144,
+										"name": "EventEmitter.prependListener"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 566,
+									"character": 23
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 144,
+								"name": "EventEmitter.prependListener"
+							}
+						},
+						{
+							"id": 151,
+							"name": "prependOnceListener",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 152,
+									"name": "prependOnceListener",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 153,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										},
+										{
+											"id": 154,
+											"name": "listener",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 155,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 156,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 157,
+																	"name": "args",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isRest": true
+																	},
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "intrinsic",
+																			"name": "any"
+																		}
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "node_modules/@types/node/globals.d.ts",
+															"line": 567,
+															"character": 61
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 151,
+										"name": "EventEmitter.prependOnceListener"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 567,
+									"character": 27
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 151,
+								"name": "EventEmitter.prependOnceListener"
+							}
+						},
+						{
+							"id": 134,
+							"name": "rawListeners",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 135,
+									"name": "rawListeners",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 136,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"name": "Function"
+										}
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 134,
+										"name": "EventEmitter.rawListeners"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 562,
+									"character": 20
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 134,
+								"name": "EventEmitter.rawListeners"
+							}
+						},
+						{
+							"id": 123,
+							"name": "removeAllListeners",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 124,
+									"name": "removeAllListeners",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 125,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 123,
+										"name": "EventEmitter.removeAllListeners"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 558,
+									"character": 26
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 123,
+								"name": "EventEmitter.removeAllListeners"
+							}
+						},
+						{
+							"id": 109,
+							"name": "removeListener",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 110,
+									"name": "removeListener",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 111,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										},
+										{
+											"id": 112,
+											"name": "listener",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 113,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {
+														"isExported": true
+													},
+													"signatures": [
+														{
+															"id": 114,
+															"name": "__call",
+															"kind": 4096,
+															"kindString": "Call signature",
+															"flags": {
+																"isExported": true
+															},
+															"parameters": [
+																{
+																	"id": 115,
+																	"name": "args",
+																	"kind": 32768,
+																	"kindString": "Parameter",
+																	"flags": {
+																		"isExported": true,
+																		"isRest": true
+																	},
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "intrinsic",
+																			"name": "any"
+																		}
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													],
+													"sources": [
+														{
+															"fileName": "node_modules/@types/node/globals.d.ts",
+															"line": 556,
+															"character": 56
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 109,
+										"name": "EventEmitter.removeListener"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 556,
+									"character": 22
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 109,
+								"name": "EventEmitter.removeListener"
+							}
+						},
+						{
+							"id": 126,
+							"name": "setMaxListeners",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 127,
+									"name": "setMaxListeners",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 128,
+											"name": "n",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 126,
+										"name": "EventEmitter.setMaxListeners"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 559,
+									"character": 23
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 126,
+								"name": "EventEmitter.setMaxListeners"
+							}
+						},
+						{
+							"id": 163,
+							"name": "listenerCount",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 164,
+									"name": "listenerCount",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"tags": [
+											{
+												"tag": "deprecated",
+												"text": "since v4.0.0"
+											}
+										]
+									},
+									"parameters": [
+										{
+											"id": 165,
+											"name": "emitter",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reference",
+												"name": "EventEmitter"
+											}
+										},
+										{
+											"id": 166,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 163,
+										"name": "EventEmitter.listenerCount"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/events.d.ts",
+									"line": 44,
+									"character": 32
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 163,
+								"name": "EventEmitter.listenerCount"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								160
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								80,
+								82,
+								79,
+								81,
+								167,
+								168
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								88,
+								85,
+								137,
+								158,
+								129,
+								83,
+								141,
+								131,
+								116,
+								95,
+								102,
+								144,
+								151,
+								134,
+								123,
+								109,
+								126,
+								163
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "test/lib/MockEmitter.ts",
+							"line": 15,
+							"character": 26
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "EventEmitter"
+						}
+					]
+				},
+				{
+					"id": 49,
+					"name": "PeopleIterator",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 56,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {},
+							"signatures": [
+								{
+									"id": 59,
+									"name": "new PeopleIterator",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"parameters": [
+										{
+											"id": 60,
+											"name": "emitter",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"shortText": "The EventEmitter to listen to."
+											},
+											"type": {
+												"type": "reference",
+												"name": "EventEmitter"
+											}
+										},
+										{
+											"id": 61,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"shortText": "The event we're listening for to receives values from."
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 62,
+											"name": "options",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"shortText": "Any extra options.\n"
+											},
+											"type": {
+												"type": "reference",
+												"id": 2,
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 43,
+														"name": "Person"
+													}
+												],
+												"name": "EventIteratorOptions"
+											},
+											"defaultValue": "{}"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 49,
+										"name": "PeopleIterator"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 15,
+										"name": "EventIterator.__constructor"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 61,
+									"character": 16
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 15,
+								"name": "EventIterator.__constructor"
+							}
+						},
+						{
+							"id": 51,
+							"name": "#ended",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Whether or not the EventIterator has ended."
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 41,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							},
+							"defaultValue": "false",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 10,
+								"name": "EventIterator.#ended"
+							}
+						},
+						{
+							"id": 52,
+							"name": "#idle",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true,
+								"isOptional": true
+							},
+							"comment": {
+								"shortText": "The amount of idle time in ms before moving on."
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 46,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 11,
+								"name": "EventIterator.#idle"
+							}
+						},
+						{
+							"id": 55,
+							"name": "#limit",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The limit before ending the EventIterator."
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 61,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 14,
+								"name": "EventIterator.#limit"
+							}
+						},
+						{
+							"id": 54,
+							"name": "#passed",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The amount of events that have passed the filter."
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 56,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "0",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 13,
+								"name": "EventIterator.#passed"
+							}
+						},
+						{
+							"id": 53,
+							"name": "#queue",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The queue of received values."
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 51,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 43,
+									"name": "Person"
+								}
+							},
+							"defaultValue": "[]",
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 12,
+								"name": "EventIterator.#queue"
+							}
+						},
+						{
+							"id": 57,
+							"name": "emitter",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true,
+								"isConstructorProperty": true,
+								"isReadonly": true
+							},
+							"comment": {
+								"shortText": "The EventEmitter to listen to."
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 69,
+									"character": 43
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EventEmitter"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 16,
+								"name": "EventIterator.emitter"
+							}
+						},
+						{
+							"id": 58,
+							"name": "event",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true,
+								"isConstructorProperty": true
+							},
+							"comment": {
+								"shortText": "The event we're listening for to receives values from."
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 69,
+									"character": 71
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 17,
+								"name": "EventIterator.event"
+							}
+						},
+						{
+							"id": 50,
+							"name": "filter",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The filter used to filter out values."
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 36,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 37,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"id": 43,
+										"name": "Person"
+									}
+								],
+								"name": "EventIteratorFilter"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 9,
+								"name": "EventIterator.filter"
+							}
+						},
+						{
+							"id": 63,
+							"name": "ended",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Whether or not the EventIterator has ended."
+							},
+							"getSignature": [
+								{
+									"id": 64,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Whether or not the EventIterator has ended."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 22,
+										"name": "EventIterator.ended"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 83,
+									"character": 17
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 22,
+								"name": "EventIterator.ended"
+							}
+						},
+						{
+							"id": 73,
+							"name": "[Symbol.asyncIterator]",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 74,
+									"name": "[Symbol.asyncIterator]",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "The symbol allowing EventIterators to be used in for-await-of loops."
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 43,
+												"name": "Person"
+											}
+										],
+										"name": "AsyncIterableIterator"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 32,
+										"name": "EventIterator.[Symbol.asyncIterator]"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 146,
+									"character": 30
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 32,
+								"name": "EventIterator.[Symbol.asyncIterator]"
+							}
+						},
+						{
+							"id": 65,
+							"name": "end",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 66,
+									"name": "end",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Ends the EventIterator."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 24,
+										"name": "EventIterator.end"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 90,
+									"character": 11
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 24,
+								"name": "EventIterator.end"
+							}
+						},
+						{
+							"id": 67,
+							"name": "next",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 68,
+									"name": "next",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "The next value that's received from the EventEmitter."
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 43,
+														"name": "Person"
+													}
+												],
+												"name": "IteratorResult"
+											}
+										],
+										"name": "Promise"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 26,
+										"name": "EventIterator.next"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 102,
+									"character": 18
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 26,
+								"name": "EventIterator.next"
+							}
+						},
+						{
+							"id": 75,
+							"name": "push",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isProtected": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 76,
+									"name": "push",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Pushes a value into the queue."
+									},
+									"parameters": [
+										{
+											"id": 77,
+											"name": "value",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reference",
+												"id": 43,
+												"name": "Person"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 34,
+										"name": "EventIterator.push"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 153,
+									"character": 15
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 34,
+								"name": "EventIterator.push"
+							}
+						},
+						{
+							"id": 69,
+							"name": "return",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 70,
+									"name": "return",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Handles what happens when you break or return from a loop."
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 43,
+														"name": "Person"
+													}
+												],
+												"name": "IteratorResult"
+											}
+										],
+										"name": "Promise"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 28,
+										"name": "EventIterator.return"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 130,
+									"character": 20
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 28,
+								"name": "EventIterator.return"
+							}
+						},
+						{
+							"id": 71,
+							"name": "throw",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 72,
+									"name": "throw",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Handles what happens when you encounter an error in a loop."
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 43,
+														"name": "Person"
+													}
+												],
+												"name": "IteratorResult"
+											}
+										],
+										"name": "Promise"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"id": 30,
+										"name": "EventIterator.throw"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 138,
+									"character": 19
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 30,
+								"name": "EventIterator.throw"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								56
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								51,
+								52,
+								55,
+								54,
+								53,
+								57,
+								58,
+								50
+							]
+						},
+						{
+							"title": "Accessors",
+							"kind": 262144,
+							"children": [
+								63
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								73,
+								65,
+								67,
+								75,
+								69,
+								71
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "test/lib/MockEmitter.ts",
+							"line": 7,
+							"character": 27
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"id": 7,
+							"typeArguments": [
+								{
+									"type": "reference",
+									"id": 43,
+									"name": "Person"
+								}
+							],
+							"name": "EventIterator"
+						}
+					],
+					"implementedTypes": [
+						{
+							"type": "reference",
+							"typeArguments": [
+								{
+									"type": "reference",
+									"id": 43,
+									"name": "Person"
+								}
+							],
+							"name": "AsyncIterableIterator"
+						}
+					]
+				},
+				{
+					"id": 169,
+					"name": "people",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "test/lib/MockEmitter.ts",
+							"line": 9,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 43,
+							"name": "Person"
+						}
+					},
+					"defaultValue": "[\n\tnew Person('Anna'),\n\tnew Person('Bob'),\n\tnew Person('Joe')\n]"
+				},
+				{
+					"id": 170,
+					"name": "sleep",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "test/lib/MockEmitter.ts",
+							"line": 48,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "__promisify__"
+					},
+					"defaultValue": "promisify(setTimeout)"
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						78,
+						49
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						169,
+						170
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "test/lib/MockEmitter.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 42,
+			"name": "\"test/lib/Person\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/event-iterator/event-iterator/test/lib/Person.ts",
+			"children": [
+				{
+					"id": 43,
+					"name": "Person",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 44,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 46,
+									"name": "new Person",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 47,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 43,
+										"name": "Person"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "test/lib/Person.ts",
+									"line": 1,
+									"character": 21
+								}
+							]
+						},
+						{
+							"id": 45,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true,
+								"isConstructorProperty": true,
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "test/lib/Person.ts",
+									"line": 3,
+									"character": 40
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								44
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								45
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "test/lib/Person.ts",
+							"line": 1,
+							"character": 19
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						43
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "test/lib/Person.ts",
 					"line": 1,
 					"character": 0
 				}
@@ -947,7 +3877,10 @@
 			"title": "Modules",
 			"kind": 1,
 			"children": [
-				1
+				1,
+				171,
+				48,
+				42
 			]
 		}
 	]
