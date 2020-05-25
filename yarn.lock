@@ -169,10 +169,10 @@
   resolved "https://registry.yarnpkg.com/@klasa/timer-manager/-/timer-manager-0.0.1.tgz#977903d92453e9602c1803af15f1713d5ca028b9"
   integrity sha512-1ElnhLXzqv4Iod/GS7+joZX71rhSxHBVDoTX8gnXF55BKXihv/p5tF3ddfx7Rn0kzUSQwJwJkyMO6QyaXMcB6A==
 
-"@klasa/utils@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@klasa/utils/-/utils-0.0.6.tgz#a64d68da3f3adfeb93eae292665fd2035107bfb6"
-  integrity sha512-CSzA4NK0p4iqvlyh5wkKeMlAz1GLUNptGTBP7x7cejBOiiqm2L4Y7zsiGOiBXGB24YPDjBekT+gN1VSs4MR65g==
+"@klasa/utils@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@klasa/utils/-/utils-0.0.8.tgz#8b017d8f7a771e5c1894b85f8dafefc219fc9d76"
+  integrity sha512-6G/P9/HM8fTanKUFPrODFmmD3ff8Jwr7gG//2BsTeWfGBBulDn/H8ObWRJjIu81nLKX1I4iQ1jNcK5uOfso6ug==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
