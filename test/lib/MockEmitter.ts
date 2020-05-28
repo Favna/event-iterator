@@ -4,7 +4,7 @@ import { Person } from './Person';
 import { TimerManager } from '@klasa/timer-manager';
 import { promisify } from 'util';
 
-export class PeopleIterator extends EventIterator<Person> { }
+export class PeopleIterator extends EventIterator<[Person]> { }
 
 export const people = [
 	new Person('Anna'),
@@ -37,7 +37,7 @@ export class PeopleEmitter extends EventEmitter {
 		}, 1000);
 	}
 
-	public createPeopleIterator(options?: EventIteratorOptions<Person>): PeopleIterator {
+	public createPeopleIterator(options?: EventIteratorOptions<[Person]>): PeopleIterator {
 		this.#iterator = new PeopleIterator(this, 'testEvent', options);
 		this.init();
 		return this.#iterator;

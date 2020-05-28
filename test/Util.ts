@@ -21,9 +21,9 @@ ava('EventIterator#next', async (test): Promise<void> => {
 	test.plan(3);
 	const iter = new PeopleEmitter().createPeopleIterator({ limit: people.length });
 	const firstValue = await iter.next();
-	test.deepEqual(firstValue, { done: false, value: people[0] });
+	test.deepEqual(firstValue, { done: false, value: [people[0]] });
 	const secondValue = await iter.next();
-	test.deepEqual(secondValue, { done: false, value: people[1] });
+	test.deepEqual(secondValue, { done: false, value: [people[1]] });
 	iter.end();
 	const thirdValue = await iter.next();
 	test.deepEqual(thirdValue, { done: true, value: undefined });
@@ -36,7 +36,7 @@ ava('EventIterator ends when it hits it\'s limit', async (test): Promise<void> =
 
 	let count = 0;
 	for await (const value of iter) {
-		test.is(value, people[count++]);
+		test.deepEqual(value, [people[count++]]);
 	}
 	test.is(count, 2);
 });
@@ -44,13 +44,12 @@ ava('EventIterator ends when it hits it\'s limit', async (test): Promise<void> =
 ava('EventIterator properly filters values', async (test): Promise<void> => {
 	test.plan(3);
 
-	const filter = (person: Person): boolean => person.name.length === 3;
-	const filteredPeople = people.filter(filter);
-	const iter = new PeopleEmitter().createPeopleIterator({ limit: filteredPeople.length, filter });
+	const filteredPeople = people.filter((person: Person): boolean => person.name.length === 3);
+	const iter = new PeopleEmitter().createPeopleIterator({ limit: filteredPeople.length, filter: ([person]: [Person]): boolean => person.name.length === 3 });
 
 	let count = 0;
 	for await (const value of iter) {
-		test.is(value, filteredPeople[count++]);
+		test.deepEqual(value, [filteredPeople[count++]]);
 	}
 	test.is(count, filteredPeople.length);
 });
@@ -71,7 +70,7 @@ ava('EventIterator timer properly idles out with iterations', async (test): Prom
 	let count = 0;
 
 	for await (const value of iter) {
-		test.is(value, people[count++]);
+		test.deepEqual(value, [people[count++]]);
 	}
 
 	test.is(count, 3);
