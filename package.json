@@ -1,6 +1,6 @@
 {
   "name": "@klasa/event-iterator",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "Turns event emitter events into async iterators.",
   "main": "dist/src/index.js",
   "scripts": {

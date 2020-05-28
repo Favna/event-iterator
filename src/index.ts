@@ -28,7 +28,7 @@ export interface EventIteratorOptions<V> {
 /**
  * An EventIterator, used for asynchronously iterating over received values.
  */
-export class EventIterator<V> implements AsyncIterableIterator<V> {
+export class EventIterator<V extends unknown[]> implements AsyncIterableIterator<V> {
 
 	/**
 	 * The filter used to filter out values.
@@ -150,7 +150,7 @@ export class EventIterator<V> implements AsyncIterableIterator<V> {
 	/**
 	 * Pushes a value into the queue.
 	 */
-	protected push(value: V): void {
+	protected push(...value: V): void {
 		this.#queue.push(value);
 	}
 
