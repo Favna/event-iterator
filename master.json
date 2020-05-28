@@ -34,6 +34,13 @@
 							"kindString": "Type parameter",
 							"flags": {
 								"isExported": true
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
 							}
 						}
 					],
@@ -108,7 +115,14 @@
 												"typeArguments": [
 													{
 														"type": "typeParameter",
-														"name": "V"
+														"name": "V",
+														"constraint": {
+															"type": "array",
+															"elementType": {
+																"type": "intrinsic",
+																"name": "unknown"
+															}
+														}
 													}
 												],
 												"name": "EventIteratorOptions"
@@ -253,7 +267,14 @@
 								"type": "array",
 								"elementType": {
 									"type": "typeParameter",
-									"name": "V"
+									"name": "V",
+									"constraint": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "unknown"
+										}
+									}
 								}
 							},
 							"defaultValue": "[]"
@@ -334,7 +355,14 @@
 								"typeArguments": [
 									{
 										"type": "typeParameter",
-										"name": "V"
+										"name": "V",
+										"constraint": {
+											"type": "array",
+											"elementType": {
+												"type": "intrinsic",
+												"name": "unknown"
+											}
+										}
 									}
 								],
 								"name": "EventIteratorFilter"
@@ -404,7 +432,14 @@
 										"typeArguments": [
 											{
 												"type": "typeParameter",
-												"name": "V"
+												"name": "V",
+												"constraint": {
+													"type": "array",
+													"elementType": {
+														"type": "intrinsic",
+														"name": "unknown"
+													}
+												}
 											}
 										],
 										"name": "AsyncIterableIterator"
@@ -483,7 +518,14 @@
 												"typeArguments": [
 													{
 														"type": "typeParameter",
-														"name": "V"
+														"name": "V",
+														"constraint": {
+															"type": "array",
+															"elementType": {
+																"type": "intrinsic",
+																"name": "unknown"
+															}
+														}
 													}
 												],
 												"name": "IteratorResult"
@@ -529,11 +571,19 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {
-												"isExported": true
+												"isExported": true,
+												"isRest": true
 											},
 											"type": {
 												"type": "typeParameter",
-												"name": "V"
+												"name": "V",
+												"constraint": {
+													"type": "array",
+													"elementType": {
+														"type": "intrinsic",
+														"name": "unknown"
+													}
+												}
 											}
 										}
 									],
@@ -580,7 +630,14 @@
 												"typeArguments": [
 													{
 														"type": "typeParameter",
-														"name": "V"
+														"name": "V",
+														"constraint": {
+															"type": "array",
+															"elementType": {
+																"type": "intrinsic",
+																"name": "unknown"
+															}
+														}
 													}
 												],
 												"name": "IteratorResult"
@@ -627,7 +684,14 @@
 												"typeArguments": [
 													{
 														"type": "typeParameter",
-														"name": "V"
+														"name": "V",
+														"constraint": {
+															"type": "array",
+															"elementType": {
+																"type": "intrinsic",
+																"name": "unknown"
+															}
+														}
 													}
 												],
 												"name": "IteratorResult"
@@ -708,7 +772,14 @@
 							"typeArguments": [
 								{
 									"type": "typeParameter",
-									"name": "V"
+									"name": "V",
+									"constraint": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "unknown"
+										}
+									}
 								}
 							],
 							"name": "AsyncIterableIterator"
@@ -1374,9 +1445,14 @@
 												"id": 2,
 												"typeArguments": [
 													{
-														"type": "reference",
-														"id": 43,
-														"name": "Person"
+														"type": "tuple",
+														"elements": [
+															{
+																"type": "reference",
+																"id": 43,
+																"name": "Person"
+															}
+														]
 													}
 												],
 												"name": "EventIteratorOptions"
@@ -2919,9 +2995,14 @@
 												"id": 2,
 												"typeArguments": [
 													{
-														"type": "reference",
-														"id": 43,
-														"name": "Person"
+														"type": "tuple",
+														"elements": [
+															{
+																"type": "reference",
+																"id": 43,
+																"name": "Person"
+															}
+														]
 													}
 												],
 												"name": "EventIteratorOptions"
@@ -3095,9 +3176,14 @@
 							"type": {
 								"type": "array",
 								"elementType": {
-									"type": "reference",
-									"id": 43,
-									"name": "Person"
+									"type": "tuple",
+									"elements": [
+										{
+											"type": "reference",
+											"id": 43,
+											"name": "Person"
+										}
+									]
 								}
 							},
 							"defaultValue": "[]",
@@ -3192,9 +3278,14 @@
 								"id": 37,
 								"typeArguments": [
 									{
-										"type": "reference",
-										"id": 43,
-										"name": "Person"
+										"type": "tuple",
+										"elements": [
+											{
+												"type": "reference",
+												"id": 43,
+												"name": "Person"
+											}
+										]
 									}
 								],
 								"name": "EventIteratorFilter"
@@ -3278,9 +3369,14 @@
 										"type": "reference",
 										"typeArguments": [
 											{
-												"type": "reference",
-												"id": 43,
-												"name": "Person"
+												"type": "tuple",
+												"elements": [
+													{
+														"type": "reference",
+														"id": 43,
+														"name": "Person"
+													}
+												]
 											}
 										],
 										"name": "AsyncIterableIterator"
@@ -3378,9 +3474,14 @@
 												"type": "reference",
 												"typeArguments": [
 													{
-														"type": "reference",
-														"id": 43,
-														"name": "Person"
+														"type": "tuple",
+														"elements": [
+															{
+																"type": "reference",
+																"id": 43,
+																"name": "Person"
+															}
+														]
 													}
 												],
 												"name": "IteratorResult"
@@ -3436,12 +3537,18 @@
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {
-												"isExported": true
+												"isExported": true,
+												"isRest": true
 											},
 											"type": {
-												"type": "reference",
-												"id": 43,
-												"name": "Person"
+												"type": "tuple",
+												"elements": [
+													{
+														"type": "reference",
+														"id": 43,
+														"name": "Person"
+													}
+												]
 											}
 										}
 									],
@@ -3497,9 +3604,14 @@
 												"type": "reference",
 												"typeArguments": [
 													{
-														"type": "reference",
-														"id": 43,
-														"name": "Person"
+														"type": "tuple",
+														"elements": [
+															{
+																"type": "reference",
+																"id": 43,
+																"name": "Person"
+															}
+														]
 													}
 												],
 												"name": "IteratorResult"
@@ -3555,9 +3667,14 @@
 												"type": "reference",
 												"typeArguments": [
 													{
-														"type": "reference",
-														"id": 43,
-														"name": "Person"
+														"type": "tuple",
+														"elements": [
+															{
+																"type": "reference",
+																"id": 43,
+																"name": "Person"
+															}
+														]
 													}
 												],
 												"name": "IteratorResult"
@@ -3641,9 +3758,14 @@
 							"id": 7,
 							"typeArguments": [
 								{
-									"type": "reference",
-									"id": 43,
-									"name": "Person"
+									"type": "tuple",
+									"elements": [
+										{
+											"type": "reference",
+											"id": 43,
+											"name": "Person"
+										}
+									]
 								}
 							],
 							"name": "EventIterator"
@@ -3654,9 +3776,14 @@
 							"type": "reference",
 							"typeArguments": [
 								{
-									"type": "reference",
-									"id": 43,
-									"name": "Person"
+									"type": "tuple",
+									"elements": [
+										{
+											"type": "reference",
+											"id": 43,
+											"name": "Person"
+										}
+									]
 								}
 							],
 							"name": "AsyncIterableIterator"
